@@ -22,6 +22,11 @@
  - **Buffer pools** - Many libraries and frameworks allocate buffers outside of the heap to improve performance. These buffer pools can be used to share memory between Java code and native code, or map regions of a file into memory.
  - **OS memory** - The operating system keeps heap and stacks for a Java process independent of the heap and stacks managed by the JVM itself. There is also memory consumed for each native library loaded (such as libjvm.so). This is usually very small.
 
+## String Constant Pool
+  - Since Strings are immutable, same Strings point to same memory location in String Constant pool.
+  - String Constant pool uses HashMap as its internal DS.
+  - _-XX:+PrintStringTableStatistics_ : Prints the string constant pool statistics.
+
   
   
   
