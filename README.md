@@ -17,10 +17,11 @@
 ## Java memory model - Stack, Heap and Metaspace
  - **Thread stacks** - Each thread has its own call stack. The stack stores primitive local variables and object references along with the call stack (list of method invocations) itself. The stack is cleaned up as stack frames move out of context so there is no GC performed here.
  - **Heap** - The heap is where your Class instantiations or “Objects” are stored.
- - **Metaspace**: Metaspace stores the Class definitions of your Objects, and Static variables.
+ - **Metaspace(Java8+)**: Metaspace stores the Class definitions of your Objects, and Static variables. **Permgen** space was used for Java <=7. Issue was it has fixed size. But metaspace auto increases its size depending on the underlying OS.
  - **Code cache** - The JIT compiler stores native code it generates in the code cache to improve performance by reusing it.
  - **Buffer pools** - Many libraries and frameworks allocate buffers outside of the heap to improve performance. These buffer pools can be used to share memory between Java code and native code, or map regions of a file into memory.
  - **OS memory** - The operating system keeps heap and stacks for a Java process independent of the heap and stacks managed by the JVM itself. There is also memory consumed for each native library loaded (such as libjvm.so). This is usually very small.
+
   
   
   
