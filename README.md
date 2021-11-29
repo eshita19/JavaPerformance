@@ -4,9 +4,17 @@
   - 32 bit machine has only C1 compiler. While 64 bit has both C1 and C2 compiler.
   
 ## VM arguments
-  - -XX:+PrintCompilation, -XX:+UnlockDiagnosticVMOptions & -XX+LogCompilations - Prints the bytecode compilation by JVM.
-  - -XX:+PrintCodeCache - Prints the used, total and reserved code cache.
-  - -XX:InitialCodeCacheSize - Sets the code cache during initial phase.
-  - -XX:ReservedCodeCacheSize - Set the maximum code cache size JVM can reach.
-  - -XX:CodeCacheExpansionSize - The amount by which the code cache should expand.
-  - -XX:-TieredCompilation - Turns off tiered compilation. JVM will select either Client or Server compiler to interpret the code, but not both.
+  - _-XX:+PrintCompilation, -XX:+UnlockDiagnosticVMOptions & -XX+LogCompilations_ - Prints the bytecode compilation by JVM.
+  - _-XX:+PrintCodeCache_ - Prints the used, total and reserved code cache.
+  - _-XX:InitialCodeCacheSize_ - Sets the code cache during initial phase.
+  - _-XX:ReservedCodeCacheSize_ - Set the maximum code cache size JVM can reach.
+  -_ -XX:CodeCacheExpansionSize_ - The amount by which the code cache should expand.
+  - _-XX:-TieredCompilation_ - Turns off tiered compilation. JVM will select either Client or Server compiler to interpret the code, but not both.
+  - _-XX:CICompilerCount=n_ - Set the number of parallel compiler threads.
+
+
+## Java memory model - Stack, Heap and Metaspace
+  
+  
+  
+  
