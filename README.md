@@ -4,3 +4,6 @@
 ## VM arguments
   - -XX:+PrintCompilation, -XX:+UnlockDiagnosticVMOptions & -XX+LogCompilations - Prints the bytecode compilation by JVM.
   - -XX:+PrintCodeCache - Prints the used, total and reserved code cache.
+  - -XX:InitialCodeCacheSize - Sets the code cache during initial phase.
+  - -XX:ReservedCodeCacheSize - Set the maximum code cache size JVM can reach.
+  - -XX:CodeCacheExpansionSize - The amount by which the code cache should expand.
