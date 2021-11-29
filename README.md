@@ -33,6 +33,11 @@
   - _-XX:+PrintStringTableStatistics_ : Prints the string constant pool statistics.
   - _-XX:StringTableSize=n_ : n is the number of buckets we need in String constant pool.
 
+## JVisualVM
+  - JvisualVM can be used to monitor heap, thread stack, metaspace and to download Heap dump.
+  - JMX connection to a docker tomcat. Add Catalina opts: `-Dcom.sun.management.jmxremote=true -Djava.rmi.server.hostname=0.0.0.0 -Dcom.sun.management.jmxremote.port=9010 -Dcom.sun.management.jmxremote.rmi.port=9010 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false`
+  - For downloading Heapdump add following JVM options: -XX:+HeapDumpOnOutOfMemoryError, -XX:+HeapDumpPath=someFilePath.
+
   
   
   
