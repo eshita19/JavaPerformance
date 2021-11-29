@@ -26,6 +26,7 @@
   - Since Strings are immutable, same Strings point to same memory location in String Constant pool.
   - String Constant pool uses HashMap as its internal DS.
   - _-XX:+PrintStringTableStatistics_ : Prints the string constant pool statistics.
+  - _-XX:StringTableSize=n_ : n is the number of buckets we need in String constant pool.
 
   
   
