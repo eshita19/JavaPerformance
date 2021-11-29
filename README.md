@@ -15,7 +15,7 @@
 
 
 ## Java memory model - Stack, Heap and Metaspace
- - **Stack** : Is used to store local varaibles and method calls of a method or a code block.
+ - **Stack** : Is used to store local primitive varaibles and method calls of a method or a code block.
   
   
   
