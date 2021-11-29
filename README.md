@@ -11,6 +11,7 @@
   -_ -XX:CodeCacheExpansionSize_ - The amount by which the code cache should expand.
   - _-XX:-TieredCompilation_ - Turns off tiered compilation. JVM will select either Client or Server compiler to interpret the code, but not both.
   - _-XX:CICompilerCount=n_ - Set the number of parallel compiler threads.
+  - _jps_ - Returns the java process running in machine.
 
 
 ## Java memory model - Stack, Heap and Metaspace
