@@ -13,6 +13,8 @@
   - _-XX:CICompilerCount=n_ - Set the number of parallel compiler threads.
   -  _-XX:MaxHeapSize=n_ or _-Xmx_ - Set max heap size.
   -  _-XX:InitialHeapSize=n_ or _-Xms_ - Initial  heap size.
+  -  _-XX:+HeapDumpOnOutOfMemoryError_ - Generate Heap dump on out of memory.
+  -  _-XX:+HeapDumpPath=someFilePath_ - Heap dump path.
   - _jps_ - Returns the java process running in machine.
 
 
