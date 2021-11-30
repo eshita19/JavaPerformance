@@ -39,6 +39,10 @@
   - For downloading Heapdump add following JVM options: -XX:+HeapDumpOnOutOfMemoryError, -XX:+HeapDumpPath=someFilePath.
   - Analyze Heap dump in _Eclipse memory analyzer_ - http://download.eclipse.org/mat/1.12.0/update-site/.
 
+
+## Garbage Collectors
+   - https://docs.oracle.com/en/java/javase/11/gctuning/garbage-first-garbage-collector.html#GUID-15921907-B297-43A4-8C48-DC88035BC7CF
+
   
   
   
